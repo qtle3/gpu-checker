@@ -18,3 +18,7 @@ The script begins by importing necessary libraries, PyTorch and TensorFlow, whic
 1. **Ensure you have the required dependencies:**
    ```bash
    pip install torch tensorflow
+   
+2. **Run the script**
+   ```bash
+   python check_cuda_gpu.py
