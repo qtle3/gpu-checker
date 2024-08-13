@@ -8,7 +8,7 @@ import tensorflow as tf
 print("PyTorch CUDA available:", torch.cuda.is_available())
 print("PyTorch CUDA device count:", torch.cuda.device_count())
 
-# print the GPU information
+# print the PyTorch GPU information
 if torch.cuda.is_available():
     print("PyTorch CUDA current device:", torch.cuda.current_device())
     print(
