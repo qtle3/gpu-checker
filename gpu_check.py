@@ -1,5 +1,10 @@
+# Description: Check if CUDA is available and print the GPU information
+
+# import libraries
 import torch
 
+
+# check if CUDA is available
 print("CUDA available:", torch.cuda.is_available())
 print("CUDA device count:", torch.cuda.device_count())
 
