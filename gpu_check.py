@@ -17,3 +17,14 @@ if torch.cuda.is_available():
     )
 else:
     print("No PyTorch CUDA device found")
+
+# Check if TensorFlow is using GPU
+print("\nTensorFlow GPU available:", tf.config.list_physical_devices("GPU"))
+print("TensorFlow GPU device count:", len(tf.config.list_physical_devices("GPU")))
+
+# print the Tensorflow GPU information
+if tf.config.list_physical_devices("GPU"):
+    gpu_devices = tf.config.list_physical_devices("GPU")
+    print("TensorFlow GPU device name:", gpu_devices[0].name)
+else:
+    print("No TensorFlow GPU device found")
