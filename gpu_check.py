@@ -26,5 +26,7 @@ print("TensorFlow GPU device count:", len(tf.config.list_physical_devices("GPU")
 if tf.config.list_physical_devices("GPU"):
     gpu_devices = tf.config.list_physical_devices("GPU")
     print("TensorFlow GPU device name:", gpu_devices[0].name)
+if len(tf.config.list_physical_devices("GPU")) > 0:
+    print("TensorFlow GPU device name:", tf.test.gpu_device_name())
 else:
     print("No TensorFlow GPU device found")
