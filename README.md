@@ -21,4 +21,4 @@ The script begins by importing necessary libraries, PyTorch and TensorFlow, whic
    
 2. **Run the script**
    ```bash
-   python check_cuda_gpu.py
+   python gpu_check.py
